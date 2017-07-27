@@ -11,3 +11,12 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+alias vim="mvim"
+alias git="hub"
+alias rm="trash"
+alias emacs="emacsclient -nc"
+alias magit="emacsclient -nc --eval '(magit-status)'"
+
+function md() {
+	mkdir -p "$@"  && cd $_
+}
